@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+}
+
+.title {
+  box-sizing: border-box;
+  padding: 70px 20px 20px 0;
+  height: 140px;
+  background-color: rgb(133, 140, 247);
+}
+
+.title__text {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.main-orderuid {
+  display: block;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  height: calc(2.8rem + 2px);
+  font-size: 1rem;
+  width: 250px;
+  padding-left: 25px;
+}
+
+.main-search {
+    background-color: rgb(133, 140, 247);
+    border: none;
+    border-radius: 10%;
+    color: #fff;
+    cursor: pointer;
+    width: 70px;
+    font-size: 15px;
+}
+
+.data-list {
+  border: 1px solid rgb(133, 140, 247);
+  border-radius: .25rem;
+  /* border-right: none;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0; */
+  padding: 30px 0 30px 30px;
+  width: 600px;
+}
+
+.data-list__item {
+  font-size: 20px;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 15px;
+  width: 350px;
+}
+
+.data-list__item:last-child {
+  margin: 0;
+}
+
+.headling {
+  color: rgb(133, 140, 247);
+  font-weight: normal;
+}
+
+.data__inner {
+  color: rgb(133, 140, 247);
+}

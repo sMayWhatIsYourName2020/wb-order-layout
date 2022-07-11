@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Стили</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">
+      <h1 class="title__text">WILDBERRIES</h1>
+    </div>
+    <h2>Введите номер заказа для получения сведений о нем</h2>
+    <form method="post" class="search-form">
+      <input type="text" name="order_uid" autofocus class="main-orderuid" placeholder="Номер заказа..">
+      <input type="submit" value="Поиск" class="main-search">
+    </form>
+    <h2 class="main-header">Информация о заказе:</h2>
+    <div class="main-text">
+      <section>
+        <h3 class="headling">Номер заказа: <span class="data__inner">312451</span></h3>
+        <ul class="main-text-general data-list">
+          <li class="data-list__item">Трек - Номер: <span class="data__inner">5641416</span></li>
+          <li class="data-list__item">ID клиента: <span class="data__inner">566565</span></li>
+          <li class="data-list__item">Служба доставки: <span class="data__inner">DAMN</span></li>
+          <li class="data-list__item">Дата и время создания заказа: <span class="data__inner">01.12.2002</span></li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="headling">Адрес и контактные данные:</h3>
+        <ul class="main-text-delivery data-list">
+          <li class="data-list__item">Имя: <span class="data__inner">Иван</span></li>
+          <li class="data-list__item">Адрес доставки: <span class="data__inner">Салават, Башкортостан, Уфимская 86, 31, 453260</span></li>
+          <li class="data-list__item">Email: <span class="data__inner">ivanevilangel@mail.ru</span></li>
+          <li class="data-list__item">Телефон: <span class="data__inner">+79190385162</span></li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="headling">Стоимость</h3>
+        <ul class="main-text-payment data-list">
+          <li class="data-list__item">Стоимость доставки: <span class="data__inner">300</span>р</li>
+        </ul>
+      </section>
+    </div>
+    <!-- <div class="main-text">
+      <section>
+        <h3 class="headling">Номер заказа: {{ .OrderUid }}</h3>
+        <ul class="main-text-general data-list">
+          <li class="data-list__item">Трек - Номер: <span class="data__inner">{{ .TrackNumber }}</span></li>
+          <li class="data-list__item">ID клиента: <span class="data__inner">{{ .CustomerId }}</span></li>
+          <li class="data-list__item">Служба доставки: <span class="data__inner">{{ .DeliveryService }}</span></li>
+          <li class="data-list__item">Дата и время создания заказа: <span class="data__inner">{{ .DateCreated }}</span></li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="headling">Адрес и контактные данные:</h3>
+        <ul class="main-text-delivery data-list">
+          <li class="data-list__item">Имя: <span class="data__inner">{{ .Delivery.Name }}</span></li>
+          <li class="data-list__item">Адрес доставки: <span class="data__inner">{{ .Delivery.City }} {{ .Delivery.Region }}
+            {{ .Delivery.Address }} {{ .Delivery.Zip }}</span></li>
+          <li class="data-list__item">Email: <span class="data__inner">{{ .Delivery.Email }}</span></li>
+          <li class="data-list__item">Телефон: <span class="data__inner">{{ .Delivery.Phone }}</span></li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="headling">Стоимость</h3>
+        <ul class="main-text-payment data-list">
+          <li class="data-list__item">Стоимость доставки: <span class="data__inner">{{ .Payment.DeliveryCost }}</span></li>
+        </ul>
+      </section>
+    </div> -->
+</body>
+
+</html>
