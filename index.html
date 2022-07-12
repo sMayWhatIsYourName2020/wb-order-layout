@@ -19,7 +19,7 @@
     </form>
     <h2 class="main-header">Информация о заказе:</h2>
     <div class="main-text">
-      <section>
+      <section class="data">
         <h3 class="headling">Номер заказа: <span class="data__inner">312451</span></h3>
         <ul class="main-text-general data-list">
           <li class="data-list__item">Трек - Номер: <span class="data__inner">5641416</span></li>
@@ -28,7 +28,7 @@
           <li class="data-list__item">Дата и время создания заказа: <span class="data__inner">01.12.2002</span></li>
         </ul>
       </section>
-      <section>
+      <section class="data">
         <h3 class="headling">Адрес и контактные данные:</h3>
         <ul class="main-text-delivery data-list">
           <li class="data-list__item">Имя: <span class="data__inner">Иван</span></li>
@@ -37,7 +37,7 @@
           <li class="data-list__item">Телефон: <span class="data__inner">+79190385162</span></li>
         </ul>
       </section>
-      <section>
+      <section class="data data__chosen">
         <h3 class="headling">Стоимость</h3>
         <ul class="main-text-payment data-list">
           <li class="data-list__item">Стоимость доставки: <span class="data__inner">300</span>р</li>
@@ -45,7 +45,7 @@
       </section>
     </div>
     <!-- <div class="main-text">
-      <section>
+      <section class="data">
         <h3 class="headling">Номер заказа: <span class="data__inner">{{ .OrderUid }}</span></h3>
         <ul class="main-text-general data-list">
           <li class="data-list__item">Трек - Номер: <span class="data__inner">{{ .TrackNumber }}</span></li>
@@ -54,7 +54,7 @@
           <li class="data-list__item">Дата и время создания заказа: <span class="data__inner">{{ .DateCreated }}</span></li>
         </ul>
       </section>
-      <section>
+      <section class="data">
         <h3 class="headling">Адрес и контактные данные:</h3>
         <ul class="main-text-delivery data-list">
           <li class="data-list__item">Имя: <span class="data__inner">{{ .Delivery.Name }}</span></li>
@@ -64,7 +64,7 @@
           <li class="data-list__item">Телефон: <span class="data__inner">{{ .Delivery.Phone }}</span></li>
         </ul>
       </section>
-      <section>
+      <section class="data data__chosen">
         <h3 class="headling">Стоимость</h3>
         <ul class="main-text-payment data-list">
           <li class="data-list__item">Стоимость доставки: <span class="data__inner">{{ .Payment.DeliveryCost }}</span></li>

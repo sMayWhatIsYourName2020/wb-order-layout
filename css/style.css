@@ -59,7 +59,6 @@ ul {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; */
   padding: 30px 0 30px 30px;
-  width: 600px;
 }
 
 .data-list__item {
@@ -68,7 +67,7 @@ ul {
   border-radius: .25rem;
   padding: 10px 0 10px 10px;
   margin-bottom: 15px;
-  width: 350px;
+  width: 450px;
 }
 
 .data-list__item:last-child {
@@ -82,4 +81,20 @@ ul {
 
 .data__inner {
   color: rgb(133, 140, 247);
+}
+
+.main-text {
+  display: grid;
+  grid-template-columns: repeat(2, 47%);
+  justify-content: space-between;
+}
+
+.data {
+  vertical-align: baseline;
+}
+
+.data__chosen {
+  grid-column: 1/-1;
+  justify-self: center;
+  width: 550px;
 }
